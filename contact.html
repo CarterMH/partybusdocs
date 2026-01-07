@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>Contact - PartyBus VA</title>
+<title>Contact Information - PartyBus VA Documentation</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <style type="text/css">
 <!--
@@ -114,40 +114,8 @@ hr {
 	color: #666666;
 	border-top: 2px solid #808080;
 }
-
-.formfield {
-	width: 250px;
-	padding: 2px;
-	border: 1px solid #808080;
-	font-size: 11px;
-}
-
-.textarea {
-	width: 250px;
-	height: 100px;
-	padding: 2px;
-	border: 1px solid #808080;
-	font-size: 11px;
-	font-family: Arial, Helvetica, sans-serif;
-}
 -->
 </style>
-<script language="JavaScript">
-function submitContact() {
-	var name = document.forms["contactForm"]["name"].value;
-	var email = document.forms["contactForm"]["email"].value;
-	var subject = document.forms["contactForm"]["subject"].value;
-	var message = document.forms["contactForm"]["message"].value;
-	
-	if (name == "" || email == "" || subject == "" || message == "") {
-		alert("Please fill in all fields!");
-		return false;
-	}
-	
-	alert("Thank you for your message! We will respond within 2-3 business days.\n\nYour message has been sent to: " + subject + "\n\nWe appreciate your patience.");
-	return true;
-}
-</script>
 </head>
 
 <body>
@@ -189,21 +157,6 @@ function submitContact() {
           <td class="navlink"><a href="faq.html">FAQ</a></td>
         </tr>
       </table>
-      <br>
-      <table width="100%" border="0" cellspacing="0" cellpadding="2" style="background-color: #FFFFCC; border: 1px solid #FFCC00;">
-        <tr>
-          <td><strong>Quick Links</strong></td>
-        </tr>
-        <tr>
-          <td><a href="main-website.html">Main Website</a></td>
-        </tr>
-        <tr>
-          <td><a href="forum.html">Forum</a></td>
-        </tr>
-        <tr>
-          <td><a href="roster.html">Pilot Roster</a></td>
-        </tr>
-      </table>
     </td>
     <td valign="top" class="contenttable">
       <table width="100%" border="0" cellspacing="10" cellpadding="10">
@@ -212,81 +165,95 @@ function submitContact() {
             
             <div class="heading">Contact Information</div>
             
-            <div class="subheading">Email Contacts</div>
-            <table width="100%" border="0" cellspacing="5" cellpadding="5">
-              <tr>
-                <td width="200"><strong>General Inquiries:</strong></td>
-                <td><a href="mailto:info@partybusva.com">info@partybusva.com</a></td>
+            <p>This page provides contact information for various departments within PartyBus Virtual Airline. Use the appropriate contact method for your inquiry.</p>
+            
+            <div class="subheading">Department Contacts</div>
+            
+            <table width="100%" border="1" cellspacing="0" cellpadding="5" style="border-color: #CCCCCC;">
+              <tr style="background-color: #F0F0F0;">
+                <td width="200"><strong>Department</strong></td>
+                <td><strong>Email Address</strong></td>
+                <td><strong>Purpose</strong></td>
               </tr>
               <tr>
-                <td><strong>Applications:</strong></td>
-                <td><a href="mailto:applications@partybusva.com">applications@partybusva.com</a></td>
+                <td>General Inquiries</td>
+                <td>info@partybusva.com</td>
+                <td>General questions about PartyBus VA</td>
               </tr>
               <tr>
-                <td><strong>Technical Support:</strong></td>
-                <td><a href="mailto:support@partybusva.com">support@partybusva.com</a></td>
+                <td>Technical Support</td>
+                <td>support@partybusva.com</td>
+                <td>ACARS issues, technical problems, system errors</td>
               </tr>
               <tr>
-                <td><strong>Operations Manager:</strong></td>
-                <td><a href="mailto:ops@partybusva.com">ops@partybusva.com</a></td>
+                <td>Operations</td>
+                <td>ops@partybusva.com</td>
+                <td>Flight operations, route questions, scheduling</td>
               </tr>
               <tr>
-                <td><strong>Fleet Management:</strong></td>
-                <td><a href="mailto:fleet@partybusva.com">fleet@partybusva.com</a></td>
+                <td>Fleet Management</td>
+                <td>fleet@partybusva.com</td>
+                <td>Aircraft configurations, paint kit questions</td>
+              </tr>
+              <tr>
+                <td>Training</td>
+                <td>training@partybusva.com</td>
+                <td>Training programs, orientation flight questions</td>
+              </tr>
+              <tr>
+                <td>Administration</td>
+                <td>admin@partybusva.com</td>
+                <td>Administrative matters, account issues</td>
               </tr>
             </table>
             
             <hr>
             
-            <div class="subheading">Contact Form</div>
-            <p>Use the form below to send us a message:</p>
-            
-            <form name="contactForm" method="post" action="javascript:void(0);" onsubmit="return submitContact();">
-            <table border="0" cellspacing="5" cellpadding="5">
-              <tr>
-                <td><strong>Your Name:</strong></td>
-                <td><input type="text" name="name" class="formfield" required></td>
-              </tr>
-              <tr>
-                <td><strong>Your Email:</strong></td>
-                <td><input type="text" name="email" class="formfield" required></td>
-              </tr>
-              <tr>
-                <td><strong>Subject:</strong></td>
-                <td>
-                  <select name="subject" class="formfield">
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Technical Support">Technical Support</option>
-                    <option value="Application Question">Application Question</option>
-                    <option value="Operations">Operations</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td valign="top"><strong>Message:</strong></td>
-                <td><textarea name="message" class="textarea" required></textarea></td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <input type="submit" value="Send Message" style="background-color: #000080; color: #FFFFFF; padding: 5px 10px; border: 1px solid #000000; cursor: pointer;">
-                  <input type="reset" value="Clear Form" style="background-color: #808080; color: #FFFFFF; padding: 5px 10px; border: 1px solid #000000; cursor: pointer;">
-                </td>
-              </tr>
-            </table>
-            </form>
-            
-            <hr>
-            
-            <div class="subheading">Other Contact Methods</div>
+            <div class="subheading">Response Times</div>
+            <p>PartyBus VA staff members respond to inquiries according to the following schedule:</p>
             <ul>
-              <li><strong>Forum:</strong> <a href="forum.html">Visit our forum</a> for discussions and support</li>
-              <li><strong>Response Time:</strong> We typically respond within 2-3 business days</li>
-              <li><strong>Office Hours:</strong> Support is available Monday-Friday, 9 AM - 5 PM EST</li>
+              <li><strong>Technical Support:</strong> Within 24 hours (urgent issues prioritized)</li>
+              <li><strong>Operations:</strong> Within 48 hours</li>
+              <li><strong>General Inquiries:</strong> Within 48-72 hours</li>
+              <li><strong>Fleet Management:</strong> Within 72 hours</li>
+              <li><strong>Training:</strong> Within 48 hours</li>
             </ul>
             
+            <div class="warning">
+              <strong>For Urgent Matters:</strong> If you have an urgent technical issue preventing flight operations, include "URGENT" in your subject line and contact technical support immediately.
+            </div>
+            
+            <hr>
+            
+            <div class="subheading">Email Guidelines</div>
+            <p>When contacting PartyBus VA staff, please follow these guidelines:</p>
+            <ul>
+              <li>Use a descriptive subject line indicating the nature of your inquiry</li>
+              <li>Include your pilot ID if applicable</li>
+              <li>Provide detailed information about your issue or question</li>
+              <li>For technical issues, include error messages and screenshots if possible</li>
+              <li>Be patient - staff members are volunteers and respond as quickly as possible</li>
+            </ul>
+            
+            <div class="subheading">Other Communication Channels</div>
+            <p>In addition to email, PartyBus VA maintains other communication channels:</p>
+            <ul>
+              <li><strong>Forum:</strong> Visit the <a href="forum.html">PartyBus VA Forum</a> for community discussions and support</li>
+              <li><strong>Documentation:</strong> Many questions can be answered by consulting the documentation on this site</li>
+              <li><strong>FAQ:</strong> Check the <a href="faq.html">Frequently Asked Questions</a> page for common questions</li>
+            </ul>
+            
+            <div class="subheading">Office Hours</div>
+            <p>PartyBus VA staff are generally available during the following hours (Eastern Time):</p>
+            <ul>
+              <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM EST</li>
+              <li><strong>Saturday:</strong> 10:00 AM - 2:00 PM EST</li>
+              <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+            <p>Note: These are general availability hours. Responses may still be sent outside these hours, but cannot be guaranteed.</p>
+            
             <div class="info">
-              <strong>Tip:</strong> For urgent technical issues, please include "URGENT" in your subject line and we will prioritize your request.
+              <strong>Tip:</strong> Before contacting staff, please review the relevant documentation sections. Many questions can be answered quickly by consulting the Operations Manual, Pilot Handbook, or FAQ section.
             </div>
             
           </td>

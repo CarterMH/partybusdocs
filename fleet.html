@@ -116,11 +116,6 @@ hr {
 }
 -->
 </style>
-<script language="JavaScript">
-function showDetails(aircraft) {
-	alert("Detailed specifications for " + aircraft + " are available in the Operations Manual. Please contact fleet management for more information.");
-}
-</script>
 </head>
 
 <body>
@@ -185,7 +180,10 @@ function showDetails(aircraft) {
             
             <div class="heading">Fleet Information</div>
             
-            <p>PartyBus VA operates an all-Airbus A320 family fleet. Click on any aircraft name for detailed specifications.</p>
+            <p>PartyBus Virtual Airline operates an exclusive fleet of Airbus A320 family aircraft in the CEO (Current Engine Option) variant. All aircraft feature the PartyBus VA custom livery and are configured for optimal performance across our route network.</p>
+            
+            <div class="subheading">Fleet Overview</div>
+            <p>Our fleet consists of three aircraft variants, all from the Airbus A320 family CEO series:</p>
             
             <table width="100%" border="1" cellspacing="0" cellpadding="5" style="border-color: #CCCCCC;">
               <tr style="background-color: #F0F0F0;">
@@ -193,62 +191,243 @@ function showDetails(aircraft) {
                 <td><strong>Type</strong></td>
                 <td><strong>ICAO Code</strong></td>
                 <td><strong>Status</strong></td>
-                <td><strong>Actions</strong></td>
               </tr>
               <tr>
-                <td><a href="javascript:void(0);" onclick="showDetails('Airbus A319');">Airbus A319</a></td>
+                <td>Airbus A319</td>
                 <td>Narrow-body Airliner (CEO)</td>
                 <td>A319</td>
                 <td>Active</td>
-                <td><a href="aircraft-configs.html">Config</a></td>
               </tr>
               <tr>
-                <td><a href="javascript:void(0);" onclick="showDetails('Airbus A320');">Airbus A320</a></td>
+                <td>Airbus A320</td>
                 <td>Narrow-body Airliner (CEO)</td>
                 <td>A320</td>
                 <td>Active</td>
-                <td><a href="aircraft-configs.html">Config</a></td>
               </tr>
               <tr>
-                <td><a href="javascript:void(0);" onclick="showDetails('Airbus A321');">Airbus A321</a></td>
+                <td>Airbus A321</td>
                 <td>Narrow-body Airliner (CEO)</td>
                 <td>A321</td>
                 <td>Active</td>
-                <td><a href="aircraft-configs.html">Config</a></td>
               </tr>
             </table>
+            
+            <hr>
+            
+            <div class="subheading">Airbus A319 Specifications</div>
+            <p>The Airbus A319 is the smallest variant in our fleet, optimized for short to medium-haul routes.</p>
+            
+            <p><strong>General Characteristics:</strong></p>
+            <ul>
+              <li><strong>Length:</strong> 33.84 meters (111.0 feet)</li>
+              <li><strong>Wingspan:</strong> 34.10 meters (111.9 feet)</li>
+              <li><strong>Height:</strong> 11.76 meters (38.6 feet)</li>
+              <li><strong>Maximum Takeoff Weight:</strong> 75,500 kg (166,450 lbs)</li>
+              <li><strong>Maximum Landing Weight:</strong> 66,000 kg (145,500 lbs)</li>
+            </ul>
+            
+            <p><strong>Performance Specifications:</strong></p>
+            <ul>
+              <li><strong>Range:</strong> 6,850 km (3,700 nm) with typical load</li>
+              <li><strong>Maximum Cruise Speed:</strong> Mach 0.82 (470 knots / 871 km/h)</li>
+              <li><strong>Typical Cruise Speed:</strong> Mach 0.78 (448 knots / 830 km/h)</li>
+              <li><strong>Service Ceiling:</strong> 39,000 feet (FL390)</li>
+              <li><strong>Takeoff Distance:</strong> 1,950 meters (6,400 feet) at MTOW</li>
+              <li><strong>Landing Distance:</strong> 1,530 meters (5,020 feet) at MLW</li>
+            </ul>
+            
+            <p><strong>Capacity:</strong></p>
+            <ul>
+              <li><strong>Typical Seating:</strong> 124-156 passengers (two-class configuration)</li>
+              <li><strong>Maximum Seating:</strong> 156 passengers (single-class, high-density)</li>
+              <li><strong>Cargo Capacity:</strong> 27.6 cubic meters (975 cubic feet)</li>
+            </ul>
+            
+            <p><strong>Engines:</strong></p>
+            <ul>
+              <li><strong>Engine Options:</strong> CFM56-5B or IAE V2500</li>
+              <li><strong>Thrust Range:</strong> 22,000 - 27,000 lbf per engine</li>
+            </ul>
+            
+            <p><strong>Recommended Routes:</strong></p>
+            <ul>
+              <li>Short-haul routes: 200-800 nm</li>
+              <li>Medium-haul routes: 800-1,200 nm</li>
+              <li>Ideal for regional and domestic operations</li>
+            </ul>
+            
+            <p>For aircraft configuration files, see <a href="aircraft-configs.html">Aircraft Configurations</a>.</p>
+            
+            <hr>
+            
+            <div class="subheading">Airbus A320 Specifications</div>
+            <p>The Airbus A320 is the standard variant in our fleet, serving as the backbone of our operations.</p>
+            
+            <p><strong>General Characteristics:</strong></p>
+            <ul>
+              <li><strong>Length:</strong> 37.57 meters (123.3 feet)</li>
+              <li><strong>Wingspan:</strong> 34.10 meters (111.9 feet)</li>
+              <li><strong>Height:</strong> 11.76 meters (38.6 feet)</li>
+              <li><strong>Maximum Takeoff Weight:</strong> 78,000 kg (171,960 lbs)</li>
+              <li><strong>Maximum Landing Weight:</strong> 66,000 kg (145,500 lbs)</li>
+            </ul>
+            
+            <p><strong>Performance Specifications:</strong></p>
+            <ul>
+              <li><strong>Range:</strong> 6,100 km (3,300 nm) with typical load</li>
+              <li><strong>Maximum Cruise Speed:</strong> Mach 0.82 (470 knots / 871 km/h)</li>
+              <li><strong>Typical Cruise Speed:</strong> Mach 0.78 (448 knots / 830 km/h)</li>
+              <li><strong>Service Ceiling:</strong> 39,000 feet (FL390)</li>
+              <li><strong>Takeoff Distance:</strong> 2,090 meters (6,860 feet) at MTOW</li>
+              <li><strong>Landing Distance:</strong> 1,530 meters (5,020 feet) at MLW</li>
+            </ul>
+            
+            <p><strong>Capacity:</strong></p>
+            <ul>
+              <li><strong>Typical Seating:</strong> 150-180 passengers (two-class configuration)</li>
+              <li><strong>Maximum Seating:</strong> 180 passengers (single-class, high-density)</li>
+              <li><strong>Cargo Capacity:</strong> 37.4 cubic meters (1,320 cubic feet)</li>
+            </ul>
+            
+            <p><strong>Engines:</strong></p>
+            <ul>
+              <li><strong>Engine Options:</strong> CFM56-5B or IAE V2500</li>
+              <li><strong>Thrust Range:</strong> 22,000 - 27,000 lbf per engine</li>
+            </ul>
+            
+            <p><strong>Recommended Routes:</strong></p>
+            <ul>
+              <li>Medium-haul routes: 400-1,500 nm</li>
+              <li>Short to medium-haul operations</li>
+              <li>Most versatile aircraft in the fleet</li>
+            </ul>
+            
+            <hr>
+            
+            <div class="subheading">Airbus A321 Specifications</div>
+            <p>The Airbus A321 is the largest variant in our fleet, optimized for medium to long-haul routes with higher capacity.</p>
+            
+            <p><strong>General Characteristics:</strong></p>
+            <ul>
+              <li><strong>Length:</strong> 44.51 meters (146.0 feet)</li>
+              <li><strong>Wingspan:</strong> 34.10 meters (111.9 feet)</li>
+              <li><strong>Height:</strong> 11.76 meters (38.6 feet)</li>
+              <li><strong>Maximum Takeoff Weight:</strong> 93,500 kg (206,130 lbs)</li>
+              <li><strong>Maximum Landing Weight:</strong> 77,800 kg (171,520 lbs)</li>
+            </ul>
+            
+            <p><strong>Performance Specifications:</strong></p>
+            <ul>
+              <li><strong>Range:</strong> 5,950 km (3,200 nm) with typical load</li>
+              <li><strong>Maximum Cruise Speed:</strong> Mach 0.82 (470 knots / 871 km/h)</li>
+              <li><strong>Typical Cruise Speed:</strong> Mach 0.78 (448 knots / 830 km/h)</li>
+              <li><strong>Service Ceiling:</strong> 39,000 feet (FL390)</li>
+              <li><strong>Takeoff Distance:</strong> 2,180 meters (7,150 feet) at MTOW</li>
+              <li><strong>Landing Distance:</strong> 1,830 meters (6,000 feet) at MLW</li>
+            </ul>
+            
+            <p><strong>Capacity:</strong></p>
+            <ul>
+              <li><strong>Typical Seating:</strong> 185-220 passengers (two-class configuration)</li>
+              <li><strong>Maximum Seating:</strong> 220 passengers (single-class, high-density)</li>
+              <li><strong>Cargo Capacity:</strong> 51.8 cubic meters (1,830 cubic feet)</li>
+            </ul>
+            
+            <p><strong>Engines:</strong></p>
+            <ul>
+              <li><strong>Engine Options:</strong> CFM56-5B or IAE V2530</li>
+              <li><strong>Thrust Range:</strong> 31,000 - 33,000 lbf per engine</li>
+            </ul>
+            
+            <p><strong>Recommended Routes:</strong></p>
+            <ul>
+              <li>Medium to long-haul routes: 600-2,500 nm</li>
+              <li>High-capacity routes requiring more seats</li>
+              <li>Longer stage lengths</li>
+            </ul>
             
             <hr>
             
             <div class="subheading">Fleet Statistics</div>
             <table border="0" cellspacing="5" cellpadding="5">
               <tr>
-                <td><strong>Total Aircraft:</strong></td>
+                <td><strong>Total Aircraft Types:</strong></td>
                 <td>3</td>
               </tr>
               <tr>
                 <td><strong>Active Aircraft:</strong></td>
-                <td>3</td>
+                <td>All variants active</td>
               </tr>
               <tr>
                 <td><strong>Aircraft Family:</strong></td>
                 <td>Airbus A320 Family (CEO)</td>
               </tr>
+              <tr>
+                <td><strong>Engine Type:</strong></td>
+                <td>CFM56 / IAE V2500 Series</td>
+              </tr>
+              <tr>
+                <td><strong>Average Fleet Age:</strong></td>
+                <td>New deliveries</td>
+              </tr>
             </table>
             
             <hr>
             
-            <div class="subheading">Aircraft Availability</div>
-            <p>All aircraft in our fleet are available for scheduled flights. Check the <a href="operations.html">operations page</a> for route assignments.</p>
+            <div class="subheading">Aircraft Configuration and Liveries</div>
+            <p>All PartyBus VA aircraft are configured with standard specifications and feature our custom livery design.</p>
             
-            <div class="info">
-              <strong>Note:</strong> Additional aircraft may be added to the fleet. Check the forum for announcements about new additions.
-            </div>
+            <p><strong>Standard Configuration:</strong></p>
+            <ul>
+              <li>All aircraft feature PartyBus VA custom livery</li>
+              <li>Standardized cabin configurations</li>
+              <li>Consistent avionics and equipment</li>
+              <li>Uniform maintenance standards</li>
+            </ul>
+            
+            <p><strong>Paint Kit:</strong></p>
+            <p>Pilots can download the <a href="paint-kit.html">Paint Kit</a> to create custom variations or for repainting purposes. The paint kit includes templates for all three aircraft variants.</p>
+            
+            <p><strong>Aircraft Configurations:</strong></p>
+            <p>Download the <a href="aircraft-configs.html">Aircraft Configuration Files</a> to install PartyBus VA aircraft in your flight simulator. Configuration files include flight dynamics, systems modeling, and livery assignments.</p>
             
             <hr>
             
-            <div class="subheading">Aircraft Livery</div>
-            <p>All PartyBus VA aircraft feature our custom livery. Download the <a href="paint-kit.html">paint kit</a> to create custom variations.</p>
+            <div class="subheading">Route Compatibility</div>
+            <p>Each aircraft variant is optimized for specific route types:</p>
+            
+            <table border="1" cellspacing="0" cellpadding="5" style="border-color: #CCCCCC; margin: 10px 0px;">
+              <tr style="background-color: #F0F0F0;">
+                <td><strong>Aircraft</strong></td>
+                <td><strong>Optimal Route Length</strong></td>
+                <td><strong>Typical Use</strong></td>
+              </tr>
+              <tr>
+                <td>A319</td>
+                <td>200-1,200 nm</td>
+                <td>Regional, short-haul domestic</td>
+              </tr>
+              <tr>
+                <td>A320</td>
+                <td>400-1,500 nm</td>
+                <td>Medium-haul, domestic, short international</td>
+              </tr>
+              <tr>
+                <td>A321</td>
+                <td>600-2,500 nm</td>
+                <td>Long-haul domestic, medium international</td>
+              </tr>
+            </table>
+            
+            <hr>
+            
+            <div class="subheading">Additional Resources</div>
+            <ul>
+              <li><a href="aircraft-configs.html">Aircraft Configurations</a> - Download aircraft files</li>
+              <li><a href="paint-kit.html">Paint Kit</a> - Download livery templates</li>
+              <li><a href="operations.html">Operations Manual</a> - Flight operations procedures</li>
+              <li><a href="route-database.html">Route Database</a> - Available routes for each aircraft</li>
+            </ul>
             
           </td>
         </tr>

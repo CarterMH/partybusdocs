@@ -123,16 +123,6 @@ hr {
 }
 -->
 </style>
-<script language="JavaScript">
-function searchRoutes() {
-	var search = document.getElementById("routeSearch").value;
-	if (search == "") {
-		alert("Please enter a route identifier (e.g., KLAX-KJFK)");
-		return;
-	}
-	alert("Searching for route: " + search + "\n\nRoute information:\nDeparture: " + search.substring(0,4) + "\nArrival: " + search.substring(5) + "\nDistance: Available in Route Database\n\nFor full route details, see the Route Database download.");
-}
-</script>
 </head>
 
 <body>
@@ -195,85 +185,356 @@ function searchRoutes() {
         <tr>
           <td>
             
-            <div class="heading">Operations</div>
+            <div class="heading">Flight Operations Manual</div>
             
-            <div class="subheading">Flight Scheduling</div>
-            <p>Pilots can schedule flights through the online system. Available routes are listed in the <a href="route-database.html">route database</a>.</p>
+            <p>This section provides comprehensive documentation on all aspects of flight operations for PartyBus Virtual Airline. All pilots must familiarize themselves with these procedures.</p>
             
-            <p><strong>Search for a route:</strong></p>
-            <input type="text" id="routeSearch" class="formfield" placeholder="KLAX-KJFK" maxlength="9">
-            <input type="button" value="Search" onclick="searchRoutes();" style="background-color: #000080; color: #FFFFFF; padding: 3px 10px; border: 1px solid #000000; cursor: pointer;">
+            <div class="subheading">Table of Contents</div>
+            <ol>
+              <li>Flight Scheduling Procedures</li>
+              <li>Pre-Flight Procedures</li>
+              <li>Departure Procedures</li>
+              <li>En-Route Operations</li>
+              <li>Arrival and Approach Procedures</li>
+              <li>Landing Procedures</li>
+              <li>Post-Flight Procedures</li>
+              <li>ACARS System Usage</li>
+              <li>Flight Hour Requirements</li>
+              <li>Route Selection Guidelines</li>
+            </ol>
             
             <hr>
             
-            <div class="subheading">ACARS System</div>
-            <p>All flights must be logged using the ACARS system. The system tracks:</p>
+            <div class="subheading">1. Flight Scheduling Procedures</div>
+            <p>All flights must be scheduled through the PartyBus VA flight scheduling system. Available routes are listed in the <a href="route-database.html">route database</a>.</p>
+            
+            <p><strong>Route Selection Criteria:</strong></p>
             <ul>
-              <li>Flight duration</li>
-              <li>Distance flown</li>
-              <li>Fuel consumption</li>
-              <li>Landing rate</li>
-              <li>Flight path</li>
+              <li>Routes must be selected from the approved route database</li>
+              <li>Aircraft type must match route requirements (see aircraft specifications in <a href="fleet.html">Fleet</a>)</li>
+              <li>Flight distance must be realistic for selected aircraft</li>
+              <li>Route must be available in the scheduling system</li>
             </ul>
             
+            <p><strong>Scheduling Process:</strong></p>
+            <ol>
+              <li>Access the route database</li>
+              <li>Select an appropriate route based on aircraft availability</li>
+              <li>Verify route details (departure, arrival, distance, estimated flight time)</li>
+              <li>Schedule the flight in the system</li>
+              <li>Note the scheduled departure time</li>
+            </ol>
+            
+            <div class="info">
+              <strong>Note:</strong> Flights should be scheduled at least 1 hour in advance. Last-minute scheduling may not be accepted.
+            </div>
+            
+            <hr>
+            
+            <div class="subheading">2. Pre-Flight Procedures</div>
+            <p>Before every flight, pilots must complete a comprehensive pre-flight checklist.</p>
+            
+            <p><strong>Pre-Flight Checklist:</strong></p>
+            <ol>
+              <li>Review flight plan and route details</li>
+              <li>Check weather conditions at departure and arrival airports</li>
+              <li>Verify aircraft availability and configuration</li>
+              <li>Load proper aircraft livery (PartyBus VA)</li>
+              <li>Configure flight simulator settings</li>
+              <li>Start ACARS system and verify connection</li>
+              <li>Perform aircraft pre-flight inspection</li>
+              <li>Calculate fuel requirements</li>
+              <li>Set up navigation equipment</li>
+              <li>Review emergency procedures</li>
+            </ol>
+            
+            <p><strong>Aircraft Configuration:</strong></p>
+            <ul>
+              <li>Ensure correct aircraft variant is loaded (A319/A320/A321 CEO)</li>
+              <li>Verify PartyBus VA livery is applied</li>
+              <li>Check that aircraft configuration matches specifications</li>
+              <li>Confirm fuel quantity matches flight requirements</li>
+            </ul>
+            
+            <p><strong>ACARS Pre-Flight Setup:</strong></p>
+            <ul>
+              <li>Launch ACARS application</li>
+              <li>Verify connection to ACARS server (acars.partybusva.com:6809)</li>
+              <li>Enter flight number and route information</li>
+              <li>Confirm pilot ID is correct</li>
+              <li>Verify ACARS is tracking flight data</li>
+            </ul>
+            
+            <div class="warning">
+              <strong>Important:</strong> Never begin a flight without confirming ACARS is connected and tracking. Flights without ACARS logs will not be counted.
+            </div>
+            
+            <hr>
+            
+            <div class="subheading">3. Departure Procedures</div>
+            <p>Standard departure procedures must be followed for all flights.</p>
+            
+            <p><strong>Pushback and Startup:</strong></p>
+            <ol>
+              <li>Request pushback clearance (if ATC is online)</li>
+              <li>Start engines according to aircraft checklist</li>
+              <li>Complete engine run-up checks</li>
+              <li>Set navigation and communication radios</li>
+              <li>Request taxi clearance</li>
+            </ol>
+            
+            <p><strong>Taxi Procedures:</strong></p>
+            <ul>
+              <li>Follow taxi instructions from ground control</li>
+              <li>Maintain safe taxi speed (maximum 20 knots)</li>
+              <li>Complete pre-takeoff checklist while taxiing</li>
+              <li>Arrive at departure runway holding point</li>
+            </ul>
+            
+            <p><strong>Takeoff Procedures:</strong></p>
+            <ol>
+              <li>Complete final pre-takeoff checklist</li>
+              <li>Request takeoff clearance</li>
+              <li>Line up on runway centerline</li>
+              <li>Apply takeoff power smoothly</li>
+              <li>Maintain centerline during takeoff roll</li>
+              <li>Rotate at appropriate airspeed (Vr)</li>
+              <li>Climb out at recommended climb speed</li>
+              <li>Retract landing gear after positive climb</li>
+              <li>Follow departure procedures or ATC instructions</li>
+            </ol>
+            
+            <div class="subheading">4. En-Route Operations</div>
+            <p>During cruise flight, pilots must maintain proper procedures and monitoring.</p>
+            
+            <p><strong>Cruise Procedures:</strong></p>
+            <ul>
+              <li>Maintain assigned altitude within +/- 100 feet</li>
+              <li>Monitor fuel consumption and adjust as necessary</li>
+              <li>Follow published route or ATC vectors</li>
+              <li>Maintain proper navigation monitoring</li>
+              <li>Communicate with ATC as required</li>
+              <li>Monitor weather conditions along route</li>
+              <li>Update ACARS system if required</li>
+            </ul>
+            
+            <p><strong>Altitude Assignments:</strong></p>
+            <ul>
+              <li>Short flights (under 500 nm): Typically FL200-FL280</li>
+              <li>Medium flights (500-1500 nm): Typically FL280-FL350</li>
+              <li>Long flights (over 1500 nm): Typically FL350-FL410</li>
+            </ul>
+            
+            <p><strong>Speed Restrictions:</strong></p>
+            <ul>
+              <li>Maintain realistic cruise speeds (Mach 0.78-0.82 typical)</li>
+              <li>Do not exceed aircraft maximum operating speed (Vmo/Mmo)</li>
+              <li>Follow ATC speed restrictions when issued</li>
+            </ul>
+            
+            <hr>
+            
+            <div class="subheading">5. Arrival and Approach Procedures</div>
+            <p>Proper arrival and approach procedures ensure safe and efficient landings.</p>
+            
+            <p><strong>Descent Planning:</strong></p>
+            <ul>
+              <li>Calculate top of descent point (typically 3nm per 1000 feet altitude)</li>
+              <li>Begin descent at calculated point or as directed by ATC</li>
+              <li>Maintain appropriate descent rate (1500-2500 fpm typical)</li>
+              <li>Monitor airspeed during descent</li>
+            </ul>
+            
+            <p><strong>Approach Procedures:</strong></p>
+            <ol>
+              <li>Contact approach control (if ATC is online)</li>
+              <li>Review approach charts for destination airport</li>
+              <li>Configure aircraft for approach (flaps, landing gear)</li>
+              <li>Follow published approach procedure or ATC vectors</li>
+              <li>Maintain proper approach speed</li>
+              <li>Complete approach checklist</li>
+            </ol>
+            
+            <p><strong>Final Approach:</strong></p>
+            <ul>
+              <li>Maintain proper glidepath (typically 3 degree)</li>
+              <li>Keep aircraft aligned with runway centerline</li>
+              <li>Monitor airspeed (typically Vref + 5-10 knots)</li>
+              <li>Be prepared for go-around if necessary</li>
+            </ul>
+            
+            <hr>
+            
+            <div class="subheading">6. Landing Procedures</div>
+            <p>Landings must be performed according to standard procedures.</p>
+            
+            <p><strong>Landing Checklist:</strong></p>
+            <ol>
+              <li>Verify landing gear extended and locked</li>
+              <li>Flaps set to landing configuration</li>
+              <li>Landing lights on</li>
+              <li>Speed brakes armed (if applicable)</li>
+              <li>Final approach speed maintained</li>
+            </ol>
+            
+            <p><strong>Landing Technique:</strong></p>
+            <ul>
+              <li>Maintain approach speed until flare</li>
+              <li>Begin flare at approximately 30-50 feet above runway</li>
+              <li>Reduce power smoothly during flare</li>
+              <li>Touch down on main landing gear first</li>
+              <li>Maintain nose-up attitude until nose gear touches</li>
+              <li>Apply reverse thrust (if applicable)</li>
+              <li>Use wheel brakes as needed</li>
+            </ul>
+            
+            <p><strong>Landing Performance Standards:</strong></p>
+            <ul>
+              <li>Landing rate should not exceed -600 fpm</li>
+              <li>Aircraft should touch down within first 3000 feet of runway</li>
+              <li>Centerline deviation should not exceed 20 feet</li>
+              <li>Airspeed at touchdown should be within 5 knots of target</li>
+            </ul>
+            
+            <div class="warning">
+              <strong>Go-Around Procedures:</strong> If a safe landing cannot be made, execute a go-around. Request clearance, apply full power, retract landing gear and flaps appropriately, and climb to assigned altitude.
+            </div>
+            
+            <hr>
+            
+            <div class="subheading">7. Post-Flight Procedures</div>
+            <p>After landing, complete post-flight procedures and flight reporting.</p>
+            
+            <p><strong>Post-Landing Procedures:</strong></p>
+            <ol>
+              <li>Taxi to assigned gate or parking area</li>
+              <li>Shut down engines</li>
+              <li>Complete post-flight inspection</li>
+              <li>Verify ACARS flight data is complete</li>
+              <li>Submit ACARS flight report</li>
+              <li>Review flight data and landing performance</li>
+            </ol>
+            
+            <p><strong>ACARS Submission:</strong></p>
+            <ul>
+              <li>Ensure all flight data is recorded in ACARS</li>
+              <li>Verify flight duration, distance, and fuel consumed are accurate</li>
+              <li>Submit flight report through ACARS system</li>
+              <li>Keep confirmation of successful submission</li>
+            </ul>
+            
+            <hr>
+            
+            <div class="subheading">8. ACARS System Usage</div>
+            <p>The ACARS (Aircraft Communications Addressing and Reporting System) is mandatory for all flights.</p>
+            
+            <p><strong>ACARS Connection Settings:</strong></p>
             <div class="code">
-              ACARS Connection Settings:<br>
               Server: acars.partybusva.com<br>
               Port: 6809<br>
               Protocol: FSPassengers<br>
-              Update Interval: 30 seconds
+              Update Interval: 30 seconds<br>
+              Pilot ID: [Your Pilot ID]
             </div>
             
-            <p>For detailed ACARS setup instructions, see the <a href="acars-guide.html">ACARS System Guide</a>.</p>
+            <p><strong>ACARS Tracks:</strong></p>
+            <ul>
+              <li>Flight duration (block to block time)</li>
+              <li>Distance flown (great circle distance)</li>
+              <li>Fuel consumed (gallons or liters)</li>
+              <li>Landing rate (feet per minute)</li>
+              <li>Flight path coordinates</li>
+              <li>Altitude profile</li>
+              <li>Speed profile</li>
+            </ul>
+            
+            <p>For detailed ACARS setup and troubleshooting, see the <a href="acars-guide.html">ACARS System Guide</a>.</p>
+            
+            <div class="info">
+              <strong>Note:</strong> All flights must be logged via ACARS. Manual flight logs are not accepted. Flights without ACARS data will not be counted toward flight hours or requirements.
+            </div>
             
             <hr>
             
-            <div class="subheading">Flight Hours</div>
-            <p>Flight hours are automatically calculated and logged. Pilots can view their flight hours in their <a href="roster.html">pilot profile</a>.</p>
+            <div class="subheading">9. Flight Hour Requirements</div>
+            <p>Pilots must meet minimum flight hour requirements to maintain active status and advance in rank.</p>
             
+            <p><strong>Minimum Activity Requirements:</strong></p>
+            <ul>
+              <li>3 flights per month minimum to maintain active status</li>
+              <li>Flights must be completed and logged via ACARS</li>
+              <li>Flights must follow approved routes</li>
+            </ul>
+            
+            <p><strong>Ranking System:</strong></p>
             <table border="1" cellspacing="0" cellpadding="5" style="border-color: #CCCCCC; margin: 10px 0px;">
               <tr style="background-color: #F0F0F0;">
                 <td><strong>Rank</strong></td>
                 <td><strong>Minimum Hours</strong></td>
+                <td><strong>Requirements</strong></td>
               </tr>
               <tr>
                 <td>First Officer</td>
                 <td>0</td>
+                <td>Initial rank upon joining</td>
               </tr>
               <tr>
                 <td>Captain</td>
                 <td>50</td>
+                <td>50 flight hours logged</td>
               </tr>
               <tr>
                 <td>Senior Captain</td>
                 <td>200</td>
+                <td>200 flight hours logged</td>
               </tr>
               <tr>
                 <td>Line Check Pilot</td>
                 <td>500</td>
+                <td>500 flight hours logged + evaluation</td>
               </tr>
             </table>
             
-            <hr>
-            
-            <div class="subheading">Flight Procedures</div>
-            <p>All pilots must follow standard flight procedures:</p>
-            <ol>
-              <li>Pre-flight checks</li>
-              <li>ATC communication (when online)</li>
-              <li>Proper departure procedures</li>
-              <li>En-route navigation</li>
-              <li>Arrival and approach procedures</li>
-              <li>Landing and post-flight checks</li>
-              <li>ACARS submission</li>
-            </ol>
-            
-            <p>For detailed procedures, see the <a href="operations-manual.html">Operations Manual</a>.</p>
+            <p><strong>Flight Hour Calculation:</strong></p>
+            <ul>
+              <li>Flight hours are calculated from block-to-block time</li>
+              <li>Only completed flights logged via ACARS count</li>
+              <li>Hours accumulate automatically in pilot profile</li>
+              <li>Rank advancement occurs automatically upon meeting requirements</li>
+            </ul>
             
             <hr>
             
-            <div class="subheading">Emergency Procedures</div>
-            <p>In case of emergency situations, refer to the <a href="emergency-procedures.html">Emergency Procedures Guide</a>.</p>
+            <div class="subheading">10. Route Selection Guidelines</div>
+            <p>Pilots should select routes appropriate for their aircraft and experience level.</p>
+            
+            <p><strong>Aircraft Route Compatibility:</strong></p>
+            <ul>
+              <li><strong>A319:</strong> Best for short to medium routes (200-1200 nm)</li>
+              <li><strong>A320:</strong> Suitable for medium routes (400-2000 nm)</li>
+              <li><strong>A321:</strong> Ideal for medium to long routes (600-3000 nm)</li>
+            </ul>
+            
+            <p><strong>Route Selection Factors:</strong></p>
+            <ul>
+              <li>Aircraft range capabilities</li>
+              <li>Runway length requirements at departure/arrival airports</li>
+              <li>Weather conditions</li>
+              <li>ATC availability (if flying online)</li>
+              <li>Personal preference and experience level</li>
+            </ul>
+            
+            <p>For complete route information, consult the <a href="route-database.html">Route Database</a>.</p>
+            
+            <hr>
+            
+            <div class="subheading">Additional Resources</div>
+            <ul>
+              <li><a href="operations-manual.html">Operations Manual</a> - Detailed operations procedures</li>
+              <li><a href="emergency-procedures.html">Emergency Procedures</a> - Emergency handling procedures</li>
+              <li><a href="acars-guide.html">ACARS Guide</a> - Complete ACARS documentation</li>
+              <li><a href="radio-guide.html">Radio Communications Guide</a> - ATC communication procedures</li>
+            </ul>
             
           </td>
         </tr>

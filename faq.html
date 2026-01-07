@@ -116,16 +116,6 @@ hr {
 }
 -->
 </style>
-<script language="JavaScript">
-function toggleAnswer(id) {
-	var answer = document.getElementById(id);
-	if (answer.style.display == "none" || answer.style.display == "") {
-		answer.style.display = "block";
-	} else {
-		answer.style.display = "none";
-	}
-}
-</script>
 </head>
 
 <body>
@@ -190,56 +180,89 @@ function toggleAnswer(id) {
             
             <div class="heading">Frequently Asked Questions</div>
             
+            <p>This section addresses common questions about PartyBus Virtual Airline operations, procedures, and policies. If your question is not answered here, consult the relevant documentation section or contact the appropriate department.</p>
+            
             <div class="subheading">General Questions</div>
             
-            <p><strong>Q: How do I reset my password?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer1');">[Show/Hide]</a></p>
-            <div id="answer1" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: Use the "Forgot Password" link on the login page, or contact technical support at <a href="mailto:support@partybusva.com">support@partybusva.com</a>.</p>
-            </div>
+            <p><strong>Q: What happens if I don't meet the minimum flight requirement?</strong></p>
+            <p>A: Pilots who do not meet the minimum flight requirement (3 flights per month) may be placed on inactive status. Inactive pilots lose access to certain privileges but can be reactivated upon meeting requirements. Contact the operations manager at ops@partybusva.com to discuss your situation and request an exception if you have extenuating circumstances.</p>
             
-            <p><strong>Q: What happens if I don't meet the minimum flight requirement?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer2');">[Show/Hide]</a></p>
-            <div id="answer2" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: Pilots who do not meet the minimum flight requirement (3 flights per month) may be placed on inactive status. Contact the operations manager to discuss your situation and request an exception.</p>
-            </div>
+            <p><strong>Q: Can I fly routes not in the database?</strong></p>
+            <p>A: Custom routes may be approved on a case-by-case basis for special operations or training flights. Submit a route request through the forum or contact operations at ops@partybusva.com. Include the departure airport, arrival airport, route distance, and justification for the custom route. Approval typically takes 3-5 business days.</p>
             
-            <p><strong>Q: Can I fly routes not in the database?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer3');">[Show/Hide]</a></p>
-            <div id="answer3" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: Custom routes may be approved on a case-by-case basis. Submit a request through the <a href="forum.html">forum</a> or contact operations at <a href="mailto:ops@partybusva.com">ops@partybusva.com</a>.</p>
-            </div>
+            <p><strong>Q: How do I report a bug in the ACARS system?</strong></p>
+            <p>A: Send detailed information about the bug to technical support at support@partybusva.com. Include the following information: description of the issue, steps to reproduce, error messages (if any), screenshots, your pilot ID, ACARS version, flight simulator version, and operating system. For ACARS-specific issues, also consult the <a href="acars-guide.html">ACARS System Guide</a> troubleshooting section.</p>
             
-            <p><strong>Q: How do I report a bug in the ACARS system?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer4');">[Show/Hide]</a></p>
-            <div id="answer4" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: Send detailed information about the bug to technical support at <a href="mailto:support@partybusva.com">support@partybusva.com</a>, including screenshots if possible. For ACARS-specific issues, see the <a href="acars-guide.html">ACARS System Guide</a>.</p>
-            </div>
+            <p><strong>Q: When are new routes added?</strong></p>
+            <p>A: New routes are typically added to the database on a monthly basis. Route additions are announced on the forum. You can download the latest <a href="route-database.html">Route Database</a> to access new routes. Route requests from pilots are reviewed during monthly route planning sessions.</p>
             
-            <p><strong>Q: When are new routes added?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer5');">[Show/Hide]</a></p>
-            <div id="answer5" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: New routes are typically added monthly. Check the forum announcements for updates. You can also download the latest <a href="route-database.html">Route Database</a>.</p>
-            </div>
+            <p><strong>Q: Can I join multiple virtual airlines?</strong></p>
+            <p>A: Yes, pilots are permitted to join multiple virtual airlines, but you must ensure you can meet the requirements for all airlines you join. You must use separate pilot IDs for each airline and maintain separate ACARS configurations. It is your responsibility to manage your commitments to each organization.</p>
             
-            <p><strong>Q: Can I join multiple virtual airlines?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer6');">[Show/Hide]</a></p>
-            <div id="answer6" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: Yes, but please ensure you can meet the requirements for all airlines you join. You must use separate pilot IDs for each airline.</p>
-            </div>
+            <p><strong>Q: What is the pilot ranking system?</strong></p>
+            <p>A: PartyBus VA uses a four-tier ranking system based on flight hours: First Officer (0 hours, initial rank), Captain (50 hours), Senior Captain (200 hours), and Line Check Pilot (500 hours + evaluation). Ranks are automatically assigned when flight hour requirements are met. See the <a href="operations.html">Operations</a> page for detailed ranking information.</p>
             
             <hr>
             
             <div class="subheading">Technical Questions</div>
             
-            <p><strong>Q: Which flight simulators are supported?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer7');">[Show/Hide]</a></p>
-            <div id="answer7" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: We support Microsoft Flight Simulator 2004, Flight Simulator X, and X-Plane. ACARS compatibility varies by simulator version.</p>
-            </div>
+            <p><strong>Q: Which flight simulators are supported?</strong></p>
+            <p>A: PartyBus VA officially supports Microsoft Flight Simulator 2004, Microsoft Flight Simulator X, and X-Plane. ACARS compatibility varies by simulator version. FSX generally has the best ACARS compatibility. Some features may not be available in all simulators. Check the <a href="acars-guide.html">ACARS Guide</a> for simulator-specific setup instructions.</p>
             
-            <p><strong>Q: How do I install aircraft liveries?</strong> <a href="javascript:void(0);" onclick="toggleAnswer('answer8');">[Show/Hide]</a></p>
-            <div id="answer8" style="display:none; margin-left: 20px; margin-bottom: 10px;">
-            <p>A: Download the <a href="paint-kit.html">Paint Kit</a> and follow the installation instructions included. For detailed instructions, contact fleet management.</p>
-            </div>
+            <p><strong>Q: How do I install aircraft liveries?</strong></p>
+            <p>A: Download the <a href="paint-kit.html">Paint Kit</a> and follow the installation instructions included in the package. Generally, livery files are copied to the aircraft's texture folder in your flight simulator directory. The exact location varies by simulator. For FSX, typical path is: SimObjects\Airplanes\[Aircraft Folder]\texture.[Livery Name]. See the paint kit documentation for detailed installation procedures for each simulator.</p>
+            
+            <p><strong>Q: How do I install aircraft configurations?</strong></p>
+            <p>A: Download the <a href="aircraft-configs.html">Aircraft Configuration Files</a> and extract them to your flight simulator's aircraft directory. For FSX, this is typically: SimObjects\Airplanes\. Follow the README.txt file included in the download for specific installation instructions. Ensure you have the base aircraft installed before adding PartyBus VA configurations.</p>
+            
+            <p><strong>Q: My ACARS won't connect. What should I do?</strong></p>
+            <p>A: First, verify your ACARS connection settings: Server: acars.partybusva.com, Port: 6809, Protocol: FSPassengers. Check that your firewall is not blocking the connection. Verify your internet connection is working. Ensure your pilot ID is correct. Try restarting both ACARS and your flight simulator. If problems persist, see the <a href="acars-guide.html">ACARS Guide</a> troubleshooting section or contact technical support.</p>
+            
+            <p><strong>Q: Can I use third-party aircraft add-ons?</strong></p>
+            <p>A: PartyBus VA requires the use of approved aircraft configurations available through our <a href="aircraft-configs.html">Aircraft Configurations</a> download. These configurations are specifically designed to work with our ACARS system and meet our standards. Third-party add-ons may not be compatible with ACARS or may not meet our specifications. Contact fleet management if you have questions about specific aircraft.</p>
+            
+            <hr>
+            
+            <div class="subheading">Flight Operations Questions</div>
+            
+            <p><strong>Q: How do I complete the orientation flight?</strong></p>
+            <p>A: Review the <a href="orientation.html">Orientation Flight Procedures</a> guide for complete instructions. The orientation flight uses route KSEA-KPDX with an A319, A320, or A321. You must complete the flight following standard procedures and submit it via ACARS. The orientation flight must be completed within 7 days of account activation.</p>
+            
+            <p><strong>Q: What is the minimum landing rate acceptable?</strong></p>
+            <p>A: Landing rates should not exceed -600 feet per minute. Landings with rates worse than -600 fpm will be flagged for review. Ideal landing rates are between -100 and -300 fpm. Practice landing techniques to achieve smooth landings consistently.</p>
+            
+            <p><strong>Q: Do I need to fly online with ATC?</strong></p>
+            <p>A: Flying online with ATC (VATSIM, IVAO) is not required but is highly recommended. Online flying provides a more realistic experience and better training. When flying online, you must follow ATC instructions. Offline flights are acceptable but should still follow proper procedures. See the <a href="radio-guide.html">Radio Communications Guide</a> for online flying procedures.</p>
+            
+            <p><strong>Q: Can I pause during a flight?</strong></p>
+            <p>A: Pausing is acceptable for brief periods (under 5 minutes) but should be avoided when possible. Extended pauses may affect ACARS tracking. If you must pause for an extended period, note the time in your flight log. Pausing during critical phases (takeoff, landing) should be avoided entirely.</p>
+            
+            <p><strong>Q: What if I need to abort a flight or go around?</strong></p>
+            <p>A: Go-arounds are acceptable and sometimes necessary for safety. If you execute a go-around, follow proper procedures and complete the approach and landing. If you must abort a flight entirely, log the flight as incomplete. Aborted flights do not count toward flight hours or activity requirements.</p>
+            
+            <hr>
+            
+            <div class="subheading">Rules and Regulations Questions</div>
+            
+            <p><strong>Q: What happens if I violate a rule?</strong></p>
+            <p>A: Violations are handled on a case-by-case basis. Minor violations may result in warnings. Serious violations may result in suspension or termination. The disciplinary process is outlined in the <a href="rules.html">Rules and Regulations</a> section. If you receive a disciplinary action, you may appeal by contacting the operations manager.</p>
+            
+            <p><strong>Q: Are there restrictions on flight times?</strong></p>
+            <p>A: There are no restrictions on when you can fly. You may fly at any time convenient for you. However, ATC coverage varies by time of day if you're flying online. Some routes may be more appropriate for certain times based on typical operations.</p>
+            
+            <p><strong>Q: Can I share my pilot ID or account?</strong></p>
+            <p>A: No, pilot IDs and accounts are personal and may not be shared. Each pilot must have their own account. Sharing accounts violates our rules and may result in suspension or termination for all parties involved.</p>
             
             <hr>
             
             <div class="subheading">Still Have Questions?</div>
-            <p>If your question is not answered here, please <a href="contact.html">contact us</a> or post on the <a href="forum.html">forum</a>.</p>
+            <p>If your question is not answered here, try the following resources:</p>
+            <ul>
+              <li>Review the relevant documentation sections (Operations, Rules, Fleet, etc.)</li>
+              <li>Check the <a href="contact.html">Contact Information</a> page for department contacts</li>
+              <li>Post your question on the <a href="forum.html">Forum</a> for community assistance</li>
+              <li>Contact the appropriate department via email for specific inquiries</li>
+            </ul>
             
           </td>
         </tr>
