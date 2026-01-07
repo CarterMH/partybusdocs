@@ -155,6 +155,18 @@ hr {
           <td class="navlink"><a href="operations.html">Operations</a></td>
         </tr>
         <tr>
+          <td class="navlink"><a href="checklists.html">Checklists</a></td>
+        </tr>
+        <tr>
+          <td class="navlink"><a href="sop.html">SOP</a></td>
+        </tr>
+        <tr>
+          <td class="navlink"><a href="poh.html">POH</a></td>
+        </tr>
+        <tr>
+          <td class="navlink"><a href="code-of-conduct.html">Code of Conduct</a></td>
+        </tr>
+        <tr>
           <td class="navlink"><a href="pilot-resources.html">Pilot Resources</a></td>
         </tr>
         <tr>
@@ -209,24 +221,26 @@ hr {
             <p>All flights must be scheduled through the PartyBus VA flight scheduling system. Available routes are listed in the <a href="route-database.html">route database</a>.</p>
             
             <p><strong>Route Selection Criteria:</strong></p>
-            <ul>
-              <li>Routes must be selected from the approved route database</li>
-              <li>Aircraft type must match route requirements (see aircraft specifications in <a href="fleet.html">Fleet</a>)</li>
-              <li>Flight distance must be realistic for selected aircraft</li>
-              <li>Route must be available in the scheduling system</li>
-            </ul>
+            <p>Route selection must comply with the following criteria. Routes must be selected exclusively from the approved route database maintained by PartyBus VA operations department. The route database contains all approved routes with detailed information including departure airport identifier (ICAO code), arrival airport identifier (ICAO code), route distance in nautical miles, typical flight time in hours and minutes, recommended aircraft type, and route-specific notes or restrictions. Aircraft type selected for the route must match the route requirements as specified in the route database. Aircraft variants (A319, A320, A321) must be appropriate for the route distance and payload requirements. Flight distance must be realistic for the selected aircraft variant based on aircraft range capabilities and typical operations. The route must be currently available in the scheduling system and not restricted or suspended. Routes marked as seasonal or conditional must only be selected when conditions are met. Custom routes not in the database require prior approval from operations management and must be submitted through the proper channels at least 72 hours in advance of the proposed flight.</p>
             
-            <p><strong>Scheduling Process:</strong></p>
+            <p><strong>Detailed Scheduling Process:</strong></p>
+            <p>The flight scheduling process consists of the following sequential steps which must be completed in order:</p>
             <ol>
-              <li>Access the route database</li>
-              <li>Select an appropriate route based on aircraft availability</li>
-              <li>Verify route details (departure, arrival, distance, estimated flight time)</li>
-              <li>Schedule the flight in the system</li>
-              <li>Note the scheduled departure time</li>
+              <li>Access the route database through the main website or documentation site. The route database is available as a downloadable Excel file or through the online route search interface.</li>
+              <li>Review available routes and filter by aircraft type, distance range, departure region, or arrival region as needed to identify suitable routes.</li>
+              <li>Select an appropriate route based on aircraft availability, personal preference, route characteristics, and operational requirements. Consider factors such as route distance, estimated flight time, airport characteristics, and route popularity.</li>
+              <li>Verify all route details including departure airport ICAO code (must be confirmed against current airport database), arrival airport ICAO code (must be confirmed against current airport database), route distance in nautical miles (verify against navigation calculations), estimated flight time in hours and minutes (calculated based on typical cruise speed and route distance), recommended aircraft variant (must match available aircraft), and any route-specific notes or restrictions.</li>
+              <li>Check aircraft availability in the scheduling system to ensure the selected aircraft variant is available for the proposed flight time. Aircraft availability may be limited during peak hours or for popular routes.</li>
+              <li>Schedule the flight in the system by entering the route identifier, aircraft variant, proposed departure time (in UTC), pilot ID, and any special requests or notes. The system will confirm availability and assign a scheduled departure time.</li>
+              <li>Note the scheduled departure time, flight number assignment, route identifier, and any special instructions provided by the system. This information should be recorded for reference during flight operations.</li>
+              <li>Review the scheduled flight details to ensure accuracy before proceeding with flight preparation. Verify all information is correct including route, aircraft, and scheduled time.</li>
             </ol>
             
+            <p><strong>Scheduling Time Requirements:</strong></p>
+            <p>Flights must be scheduled at least one (1) hour in advance of the proposed departure time. This advance scheduling requirement allows time for system processing, aircraft availability confirmation, and flight preparation. Last-minute scheduling requests (less than one hour before departure) may not be accepted by the system and are discouraged. Pilots should plan their flight schedules in advance to ensure availability and proper processing. Scheduled flights may be cancelled or modified up to 30 minutes before the scheduled departure time without penalty. Cancellations or modifications within 30 minutes of scheduled departure may be subject to review.</p>
+            
             <div class="info">
-              <strong>Note:</strong> Flights should be scheduled at least 1 hour in advance. Last-minute scheduling may not be accepted.
+              <strong>Scheduling System Availability:</strong> The flight scheduling system is available 24 hours per day, 7 days per week. Scheduled maintenance windows are announced in advance on the forum and main website. During maintenance windows, scheduling may be unavailable. Pilots should plan accordingly.
             </div>
             
             <hr>
@@ -235,34 +249,37 @@ hr {
             <p>Before every flight, pilots must complete a comprehensive pre-flight checklist.</p>
             
             <p><strong>Pre-Flight Checklist:</strong></p>
+            <p>The pre-flight checklist must be completed in the specified order. Each item must be verified before proceeding to the next item. The complete pre-flight checklist includes the following items:</p>
             <ol>
-              <li>Review flight plan and route details</li>
-              <li>Check weather conditions at departure and arrival airports</li>
-              <li>Verify aircraft availability and configuration</li>
-              <li>Load proper aircraft livery (PartyBus VA)</li>
-              <li>Configure flight simulator settings</li>
-              <li>Start ACARS system and verify connection</li>
-              <li>Perform aircraft pre-flight inspection</li>
-              <li>Calculate fuel requirements</li>
-              <li>Set up navigation equipment</li>
-              <li>Review emergency procedures</li>
+              <li>Review flight plan and route details: Open the scheduled flight in the system and review all flight plan information including departure airport (verify ICAO code, confirm airport name, check airport elevation, verify runway availability), arrival airport (verify ICAO code, confirm airport name, check airport elevation, verify runway availability), route distance (confirm distance matches route database, verify units are in nautical miles), estimated flight time (verify calculation is reasonable for route distance and aircraft type), scheduled departure time (confirm time is correct, verify time zone if applicable), assigned flight number (note for ACARS entry), and any route-specific notes or restrictions.</li>
+              <li>Check weather conditions at departure and arrival airports: Access current weather information for departure airport (surface wind direction and velocity, visibility conditions, cloud cover and ceiling, precipitation if any, temperature and dewpoint, altimeter setting, any significant weather phenomena), arrival airport (surface wind direction and velocity, visibility conditions, cloud cover and ceiling, precipitation if any, temperature and dewpoint, altimeter setting, any significant weather phenomena), and en-route conditions (significant weather along route, turbulence reports, icing conditions if applicable). Weather information should be current (within 6 hours) and appropriate for flight planning purposes.</li>
+              <li>Verify aircraft availability and configuration: Confirm the scheduled aircraft variant is available and properly configured. Check that the aircraft file is installed correctly in the flight simulator directory. Verify the aircraft variant matches the scheduled flight (A319, A320, or A321). Ensure the aircraft configuration file is current and matches PartyBus VA specifications. Check that all required aircraft files are present and not corrupted.</li>
+              <li>Load proper aircraft livery (PartyBus VA): Select the PartyBus VA livery for the aircraft. Verify the livery is properly applied and displays correctly. Check that registration numbers and markings are visible and correct. Ensure the livery matches PartyBus VA specifications as provided in the paint kit documentation.</li>
+              <li>Configure flight simulator settings: Set flight simulator date and time to match planned flight conditions. Configure weather settings (real-world weather recommended, or set appropriate conditions). Set traffic settings if applicable. Configure scenery settings to ensure airports and navigation aids are available. Set display settings for appropriate visibility and performance. Configure control settings and calibrate controllers if needed.</li>
+              <li>Start ACARS system and verify connection: Launch the ACARS application before loading the flight. Verify ACARS connects to the server at acars.partybus.org on port 6809. Confirm connection status indicator shows "Connected" or similar. Verify pilot ID is entered correctly in ACARS settings. Check that ACARS is configured for the correct flight simulator version. Test ACARS functionality to ensure it can receive flight data from the simulator.</li>
+              <li>Perform aircraft pre-flight inspection: Complete the exterior walkaround inspection per the pre-flight inspection checklist (see Checklists section). Inspect landing gear, tires, struts, and doors. Check control surfaces for freedom of movement and proper attachment. Inspect engines, cowlings, and engine areas. Check lights and external equipment. Verify fuel quantity visually if possible. Check for any visible damage or fluid leaks. Complete the cockpit pre-flight inspection per checklist. Verify all switches are in proper positions. Check flight instruments and displays. Verify navigation equipment functionality.</li>
+              <li>Calculate fuel requirements: Determine trip fuel based on route distance, aircraft fuel consumption rates, and flight conditions. Add reserve fuel as required (typically 45 minutes of flight time or as specified). Add alternate fuel if required based on weather conditions at destination. Add taxi fuel for departure and arrival operations (typically 100-200 kg). Calculate total fuel requirement and verify it does not exceed aircraft maximum fuel capacity. Verify fuel quantity loaded matches calculated requirements.</li>
+              <li>Set up navigation equipment: Load the flight plan into the flight management system (FMS) or navigation system. Verify all waypoints are correctly entered. Check that route distance matches flight plan. Set departure airport and arrival airport in navigation systems. Program departure procedure if applicable. Program arrival procedure and approach if known. Set radio frequencies for departure, en-route, and arrival communications. Verify navigation systems are functioning correctly.</li>
+              <li>Review emergency procedures: Review emergency procedures relevant to the flight including engine failure procedures, fire procedures, loss of pressurization procedures, electrical failure procedures, and landing gear problems. Note the location of emergency checklists. Review diversion procedures and alternate airports. Ensure emergency procedures are readily accessible during flight.</li>
             </ol>
             
-            <p><strong>Aircraft Configuration:</strong></p>
+            <p><strong>Aircraft Configuration Details:</strong></p>
+            <p>Aircraft configuration must be verified in detail before flight:</p>
             <ul>
-              <li>Ensure correct aircraft variant is loaded (A319/A320/A321 CEO)</li>
-              <li>Verify PartyBus VA livery is applied</li>
-              <li>Check that aircraft configuration matches specifications</li>
-              <li>Confirm fuel quantity matches flight requirements</li>
+              <li>Ensure correct aircraft variant is loaded: Verify the aircraft model loaded matches the scheduled flight (A319, A320, or A321). Check aircraft model identifier in the simulator to confirm variant. Verify aircraft characteristics match specifications for the selected variant including length, capacity, and performance parameters. Ensure the aircraft variant is the CEO (Current Engine Option) variant, not the NEO variant.</li>
+              <li>Verify PartyBus VA livery is applied: Check that the PartyBus VA livery is selected and properly applied to the aircraft. Verify livery texture files are present and correctly installed. Check that registration numbers are visible and correct. Verify PartyBus VA markings and logos are displayed properly. Ensure livery matches current PartyBus VA specifications.</li>
+              <li>Check that aircraft configuration matches specifications: Verify aircraft weight and balance parameters are within limits. Check fuel quantity matches flight requirements. Verify payload configuration if applicable. Confirm aircraft systems are functioning correctly. Check that aircraft performance parameters match specifications for the variant.</li>
+              <li>Confirm fuel quantity matches flight requirements: Verify fuel quantity loaded equals calculated fuel requirements. Check fuel quantity display accuracy. Verify fuel is distributed correctly among tanks if applicable. Ensure fuel quantity does not exceed maximum fuel capacity. Confirm fuel quantity is adequate for flight plus reserves.</li>
             </ul>
             
-            <p><strong>ACARS Pre-Flight Setup:</strong></p>
+            <p><strong>ACARS Pre-Flight Setup Procedures:</strong></p>
+            <p>ACARS setup must be completed before flight operations begin:</p>
             <ul>
-              <li>Launch ACARS application</li>
-              <li>Verify connection to ACARS server (acars.partybusva.com:6809)</li>
-              <li>Enter flight number and route information</li>
-              <li>Confirm pilot ID is correct</li>
-              <li>Verify ACARS is tracking flight data</li>
+              <li>Launch ACARS application: Start the ACARS software application before loading the flight in the simulator. Ensure ACARS is compatible with the flight simulator version being used. Verify ACARS software version is current and supported. Check that ACARS is properly installed and configured.</li>
+              <li>Verify connection to ACARS server: Confirm ACARS connects to the server at acars.partybus.org. Verify connection is established on port 6809 using the FSPassengers protocol. Check connection status indicator shows "Connected" or "Online" status. Verify connection remains stable and does not drop. Test connection by checking if ACARS can communicate with the server.</li>
+              <li>Enter flight number and route information: Enter the assigned flight number in ACARS. Enter departure airport ICAO code. Enter arrival airport ICAO code. Enter route identifier if applicable. Enter scheduled departure time. Enter any additional route information required by ACARS. Verify all information is entered correctly.</li>
+              <li>Confirm pilot ID is correct: Verify pilot ID is entered correctly in ACARS settings. Check that pilot ID matches the registered PartyBus VA pilot ID. Ensure pilot ID is not shared or incorrect. Verify pilot ID is active and not suspended.</li>
+              <li>Verify ACARS is tracking flight data: Confirm ACARS can receive flight data from the simulator. Test that ACARS displays aircraft position, altitude, speed, and other flight parameters. Verify ACARS can track flight path and record flight data. Check that ACARS update interval is set correctly (typically 30 seconds). Ensure ACARS will log flight duration, distance, fuel consumption, and landing performance.</li>
             </ul>
             
             <div class="warning">
@@ -430,7 +447,7 @@ hr {
             
             <p><strong>ACARS Connection Settings:</strong></p>
             <div class="code">
-              Server: acars.partybusva.com<br>
+              Server: acars.partybus.org<br>
               Port: 6809<br>
               Protocol: FSPassengers<br>
               Update Interval: 30 seconds<br>
